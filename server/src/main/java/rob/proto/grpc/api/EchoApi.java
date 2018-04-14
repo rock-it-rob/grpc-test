@@ -15,7 +15,7 @@ public final class EchoApi {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface EchoRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:rob.proto.grpc.api.EchoRequest)
+      // @@protoc_insertion_point(interface_extends:EchoRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -29,11 +29,11 @@ public final class EchoApi {
         getContentBytes();
   }
   /**
-   * Protobuf type {@code rob.proto.grpc.api.EchoRequest}
+   * Protobuf type {@code EchoRequest}
    */
   public  static final class EchoRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:rob.proto.grpc.api.EchoRequest)
+      // @@protoc_insertion_point(message_implements:EchoRequest)
       EchoRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use EchoRequest.newBuilder() to construct.
@@ -95,12 +95,12 @@ public final class EchoApi {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return rob.proto.grpc.api.EchoApi.internal_static_rob_proto_grpc_api_EchoRequest_descriptor;
+      return rob.proto.grpc.api.EchoApi.internal_static_EchoRequest_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return rob.proto.grpc.api.EchoApi.internal_static_rob_proto_grpc_api_EchoRequest_fieldAccessorTable
+      return rob.proto.grpc.api.EchoApi.internal_static_EchoRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               rob.proto.grpc.api.EchoApi.EchoRequest.class, rob.proto.grpc.api.EchoApi.EchoRequest.Builder.class);
     }
@@ -290,20 +290,20 @@ public final class EchoApi {
       return builder;
     }
     /**
-     * Protobuf type {@code rob.proto.grpc.api.EchoRequest}
+     * Protobuf type {@code EchoRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:rob.proto.grpc.api.EchoRequest)
+        // @@protoc_insertion_point(builder_implements:EchoRequest)
         rob.proto.grpc.api.EchoApi.EchoRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return rob.proto.grpc.api.EchoApi.internal_static_rob_proto_grpc_api_EchoRequest_descriptor;
+        return rob.proto.grpc.api.EchoApi.internal_static_EchoRequest_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return rob.proto.grpc.api.EchoApi.internal_static_rob_proto_grpc_api_EchoRequest_fieldAccessorTable
+        return rob.proto.grpc.api.EchoApi.internal_static_EchoRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 rob.proto.grpc.api.EchoApi.EchoRequest.class, rob.proto.grpc.api.EchoApi.EchoRequest.Builder.class);
       }
@@ -332,7 +332,7 @@ public final class EchoApi {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return rob.proto.grpc.api.EchoApi.internal_static_rob_proto_grpc_api_EchoRequest_descriptor;
+        return rob.proto.grpc.api.EchoApi.internal_static_EchoRequest_descriptor;
       }
 
       public rob.proto.grpc.api.EchoApi.EchoRequest getDefaultInstanceForType() {
@@ -501,10 +501,10 @@ public final class EchoApi {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:rob.proto.grpc.api.EchoRequest)
+      // @@protoc_insertion_point(builder_scope:EchoRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:rob.proto.grpc.api.EchoRequest)
+    // @@protoc_insertion_point(class_scope:EchoRequest)
     private static final rob.proto.grpc.api.EchoApi.EchoRequest DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new rob.proto.grpc.api.EchoApi.EchoRequest();
@@ -540,7 +540,7 @@ public final class EchoApi {
   }
 
   public interface EchoResponseOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:rob.proto.grpc.api.EchoResponse)
+      // @@protoc_insertion_point(interface_extends:EchoResponse)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -554,11 +554,11 @@ public final class EchoApi {
         getContentBytes();
   }
   /**
-   * Protobuf type {@code rob.proto.grpc.api.EchoResponse}
+   * Protobuf type {@code EchoResponse}
    */
   public  static final class EchoResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:rob.proto.grpc.api.EchoResponse)
+      // @@protoc_insertion_point(message_implements:EchoResponse)
       EchoResponseOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use EchoResponse.newBuilder() to construct.
@@ -620,12 +620,12 @@ public final class EchoApi {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return rob.proto.grpc.api.EchoApi.internal_static_rob_proto_grpc_api_EchoResponse_descriptor;
+      return rob.proto.grpc.api.EchoApi.internal_static_EchoResponse_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return rob.proto.grpc.api.EchoApi.internal_static_rob_proto_grpc_api_EchoResponse_fieldAccessorTable
+      return rob.proto.grpc.api.EchoApi.internal_static_EchoResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               rob.proto.grpc.api.EchoApi.EchoResponse.class, rob.proto.grpc.api.EchoApi.EchoResponse.Builder.class);
     }
@@ -815,20 +815,20 @@ public final class EchoApi {
       return builder;
     }
     /**
-     * Protobuf type {@code rob.proto.grpc.api.EchoResponse}
+     * Protobuf type {@code EchoResponse}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:rob.proto.grpc.api.EchoResponse)
+        // @@protoc_insertion_point(builder_implements:EchoResponse)
         rob.proto.grpc.api.EchoApi.EchoResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return rob.proto.grpc.api.EchoApi.internal_static_rob_proto_grpc_api_EchoResponse_descriptor;
+        return rob.proto.grpc.api.EchoApi.internal_static_EchoResponse_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return rob.proto.grpc.api.EchoApi.internal_static_rob_proto_grpc_api_EchoResponse_fieldAccessorTable
+        return rob.proto.grpc.api.EchoApi.internal_static_EchoResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 rob.proto.grpc.api.EchoApi.EchoResponse.class, rob.proto.grpc.api.EchoApi.EchoResponse.Builder.class);
       }
@@ -857,7 +857,7 @@ public final class EchoApi {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return rob.proto.grpc.api.EchoApi.internal_static_rob_proto_grpc_api_EchoResponse_descriptor;
+        return rob.proto.grpc.api.EchoApi.internal_static_EchoResponse_descriptor;
       }
 
       public rob.proto.grpc.api.EchoApi.EchoResponse getDefaultInstanceForType() {
@@ -1026,10 +1026,10 @@ public final class EchoApi {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:rob.proto.grpc.api.EchoResponse)
+      // @@protoc_insertion_point(builder_scope:EchoResponse)
     }
 
-    // @@protoc_insertion_point(class_scope:rob.proto.grpc.api.EchoResponse)
+    // @@protoc_insertion_point(class_scope:EchoResponse)
     private static final rob.proto.grpc.api.EchoApi.EchoResponse DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new rob.proto.grpc.api.EchoApi.EchoResponse();
@@ -1065,15 +1065,15 @@ public final class EchoApi {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_rob_proto_grpc_api_EchoRequest_descriptor;
+    internal_static_EchoRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_rob_proto_grpc_api_EchoRequest_fieldAccessorTable;
+      internal_static_EchoRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_rob_proto_grpc_api_EchoResponse_descriptor;
+    internal_static_EchoResponse_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_rob_proto_grpc_api_EchoResponse_fieldAccessorTable;
+      internal_static_EchoResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1083,11 +1083,11 @@ public final class EchoApi {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016echo-api.proto\022\022rob.proto.grpc.api\"\036\n\013" +
-      "EchoRequest\022\017\n\007content\030\001 \001(\t\"\037\n\014EchoResp" +
-      "onse\022\017\n\007content\030\001 \001(\t2X\n\013EchoService\022I\n\004" +
-      "Echo\022\037.rob.proto.grpc.api.EchoRequest\032 ." +
-      "rob.proto.grpc.api.EchoResponseb\006proto3"
+      "\n\016echo-api.proto\"\036\n\013EchoRequest\022\017\n\007conte" +
+      "nt\030\001 \001(\t\"\037\n\014EchoResponse\022\017\n\007content\030\001 \001(" +
+      "\t22\n\013EchoService\022#\n\004Echo\022\014.EchoRequest\032\r" +
+      ".EchoResponseB\024\n\022rob.proto.grpc.apib\006pro" +
+      "to3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1101,17 +1101,17 @@ public final class EchoApi {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_rob_proto_grpc_api_EchoRequest_descriptor =
+    internal_static_EchoRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_rob_proto_grpc_api_EchoRequest_fieldAccessorTable = new
+    internal_static_EchoRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_rob_proto_grpc_api_EchoRequest_descriptor,
+        internal_static_EchoRequest_descriptor,
         new java.lang.String[] { "Content", });
-    internal_static_rob_proto_grpc_api_EchoResponse_descriptor =
+    internal_static_EchoResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_rob_proto_grpc_api_EchoResponse_fieldAccessorTable = new
+    internal_static_EchoResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_rob_proto_grpc_api_EchoResponse_descriptor,
+        internal_static_EchoResponse_descriptor,
         new java.lang.String[] { "Content", });
   }
 
