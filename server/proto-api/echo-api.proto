@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package rob.proto.grpc.api;
+option java_package = "rob.proto.grpc.api";
 
 message EchoRequest {
     string content = 1;
