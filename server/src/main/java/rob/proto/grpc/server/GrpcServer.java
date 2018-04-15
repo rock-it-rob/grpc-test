@@ -13,8 +13,9 @@ public interface GrpcServer
      * Starts the gRPC server.
      *
      * @throws IOException
+     * @throws InterruptedException
      */
-    void start() throws IOException;
+    void start() throws IOException, InterruptedException;
 
     /**
      * Stops the gRPC server.

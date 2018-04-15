@@ -37,7 +37,7 @@ public class GrpcServerImpl implements GrpcServer
     }
 
     @Override
-    public void start() throws IOException
+    public void start() throws IOException, InterruptedException
     {
         server.start();
         log.info("Server started on port: " + port);
@@ -46,6 +46,8 @@ public class GrpcServerImpl implements GrpcServer
         Runtime.getRuntime().addShutdownHook(
             new Thread(() -> stop())
         );
+
+        server.awaitTermination();
     }
 
     @Override

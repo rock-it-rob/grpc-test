@@ -14,7 +14,7 @@ public class Start
 {
     private static final String SPRING_XML = "classpath:server-spring.xml";
 
-    public static void main(String[] args) throws IOException
+    public static void main(String[] args) throws IOException, InterruptedException
     {
         GenericXmlApplicationContext applicationContext = new GenericXmlApplicationContext(SPRING_XML);
         GrpcServer grpcServer = applicationContext.getBean(GrpcServer.class);
