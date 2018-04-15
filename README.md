@@ -8,7 +8,7 @@ The server module contains the server.
 
 ### Generating protobuf Classes and Service Classes
 
-Use the documented maven plugin execute the `protobuf:compile` and
+Use the documented maven grpc plugin to execute the `protobuf:compile` and
 `protbuf:compile-custom` goals.
 
 ## Client
