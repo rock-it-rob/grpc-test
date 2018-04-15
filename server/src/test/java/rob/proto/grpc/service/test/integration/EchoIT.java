@@ -1,14 +1,12 @@
 package rob.proto.grpc.service.test.integration;
 
-import org.junit.Test;
+import org.junit.Ignore;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import rob.proto.grpc.service.DefaultEcho;
-import rob.proto.grpc.service.Echo;
 
 import static org.junit.Assert.*;
 
@@ -20,6 +18,7 @@ import static org.junit.Assert.*;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
+@Ignore
 public class EchoIT
 {
     @Configuration
@@ -27,22 +26,4 @@ public class EchoIT
     static class Config
     {
     }
-
-    @Autowired
-    private Echo echo;
-
-    /**
-     * Validate default implementation works.
-     */
-    @Test
-    public void testEcho()
-    {
-        String message = "test message";
-        String result = echo.echo(message);
-        assertNotNull(result);
-        assertEquals(message, result);
-    }
-
-
-
 }
