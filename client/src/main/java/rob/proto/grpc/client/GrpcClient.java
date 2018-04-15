@@ -15,4 +15,11 @@ public interface GrpcClient
      * @return String result of the remote service call.
      */
     String echo(String message);
+
+    /**
+     * Called when done with this instance. Spring will call this automatically.
+     *
+     * @throws InterruptedException
+     */
+    void shutdown() throws InterruptedException;
 }

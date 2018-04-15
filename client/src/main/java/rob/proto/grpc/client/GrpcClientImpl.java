@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 import rob.proto.grpc.api.EchoApi;
 import rob.proto.grpc.api.EchoServiceGrpc;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * GrpcClientImpl is the implementation of the {@link GrpcClient}.
  *
@@ -18,6 +20,7 @@ public class GrpcClientImpl implements GrpcClient
 
     private final String serverHostname;
     private final int serverPort;
+    private final ManagedChannel channel;
     private final EchoServiceGrpc.EchoServiceBlockingStub blockingStub;
 
     /**
@@ -33,8 +36,8 @@ public class GrpcClientImpl implements GrpcClient
         ManagedChannelBuilder<?> channelBuilder = ManagedChannelBuilder.forAddress(
             serverHostname, serverPort
         );
-        ManagedChannel channel = channelBuilder.build();
-        log.info("Channel created for: %s:%d", serverHostname, serverPort);
+        channel = channelBuilder.build();
+        log.info(String.format("Channel created for: %s:%d", serverHostname, serverPort));
         blockingStub = EchoServiceGrpc.newBlockingStub(channel);
     }
 
@@ -46,5 +49,11 @@ public class GrpcClientImpl implements GrpcClient
         EchoApi.EchoResponse echoResponse = blockingStub.echo(echoRequest);
 
         return echoResponse.getContent();
+    }
+
+    @Override
+    public void shutdown() throws InterruptedException
+    {
+        channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
     }
 }
