@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "rob.proto.grpc.api";
+
+message EchoRequest {
+    string content = 1;
+}
+
+message EchoResponse {
+    string content = 1;
+}
+
+service EchoService {
+    rpc Echo (EchoRequest) returns (EchoResponse);
+}
