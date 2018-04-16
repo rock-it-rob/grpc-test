@@ -16,8 +16,12 @@ public class Start
 
     public static void main(String[] args) throws IOException, InterruptedException
     {
-        GenericXmlApplicationContext applicationContext = new GenericXmlApplicationContext(SPRING_XML);
-        GrpcServer grpcServer = applicationContext.getBean(GrpcServer.class);
-        grpcServer.start();
+        try (
+                GenericXmlApplicationContext applicationContext = new GenericXmlApplicationContext(SPRING_XML);
+        )
+        {
+            GrpcServer grpcServer = applicationContext.getBean(GrpcServer.class);
+            grpcServer.start();
+        }
     }
 }
