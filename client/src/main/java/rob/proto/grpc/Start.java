@@ -27,8 +27,9 @@ public class Start
             {
                 final String message = "Sending call " + i;
                 System.out.println("Sending message: " + message);
-                final String result = start.sendEcho(message);
-                System.out.println("Received message: " + result);
+                //final String result = start.sendEcho(message);
+                //System.out.println("Received message: " + result);
+                start.sendEchoAsync(message);
             }
         }
     }
@@ -43,5 +44,10 @@ public class Start
     private String sendEcho(String message)
     {
         return grpcClient.echo(message);
+    }
+
+    private void sendEchoAsync(String message)
+    {
+        grpcClient.echoAsync(message);
     }
 }

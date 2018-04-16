@@ -18,10 +18,10 @@ public class GrpcClientImpl implements GrpcClient
 {
     private final Logger log = LoggerFactory.getLogger(GrpcClientImpl.class);
 
-    private final String serverHostname;
-    private final int serverPort;
-    private final ManagedChannel channel;
-    private final EchoServiceGrpc.EchoServiceBlockingStub blockingStub;
+    protected final String serverHostname;
+    protected final int serverPort;
+    protected final ManagedChannel channel;
+    protected final EchoServiceGrpc.EchoServiceBlockingStub blockingStub;
 
     /**
      * Construct a new instance from the hostname and port of the grpc server.
@@ -49,6 +49,12 @@ public class GrpcClientImpl implements GrpcClient
         EchoApi.EchoResponse echoResponse = blockingStub.echo(echoRequest);
 
         return echoResponse.getContent();
+    }
+
+    @Override
+    public void echoAsync(String message)
+    {
+        throw new UnsupportedOperationException();
     }
 
     @Override

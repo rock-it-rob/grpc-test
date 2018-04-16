@@ -14,7 +14,7 @@
 
     <context:property-placeholder location="classpath:server.properties"/>
 
-    <bean id="grpcClient" class="rob.proto.grpc.client.GrpcClientImpl">
+    <bean id="grpcClient" class="rob.proto.grpc.client.AsyncGrpcClient">
         <constructor-arg value="${server.host}"/>
         <constructor-arg value="${server.port}"/>
     </bean>

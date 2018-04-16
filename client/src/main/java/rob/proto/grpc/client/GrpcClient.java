@@ -9,12 +9,18 @@ package rob.proto.grpc.client;
 public interface GrpcClient
 {
     /**
-     * Calls the echo remote service and returns its result.
+     * Calls the echo remote service and returns its result. This is a blocking, synchronous call.
      *
      * @param message String
      * @return String result of the remote service call.
      */
     String echo(String message);
+
+    /**
+     * Calls the echo remote service asynchronously. No value is returned.
+     * @param message String
+     */
+    void echoAsync(String message);
 
     /**
      * Called when done with this instance. Spring will call this automatically.
