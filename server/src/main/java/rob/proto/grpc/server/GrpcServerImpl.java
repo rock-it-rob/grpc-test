@@ -59,6 +59,11 @@ public class GrpcServerImpl implements GrpcServer
 
     /**
      * EchoService does the heavy lifting.
+     * <p>
+     * NOTE: this class was originally defined as a private, static, inner
+     * class in the example. Other examples had it created as an anonymous
+     * class. Using it as a static class makes using spring beans a little
+     * harder.
      */
     private static class EchoService extends EchoServiceGrpc.EchoServiceImplBase
     {

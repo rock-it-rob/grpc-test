@@ -12,6 +12,8 @@
        profile="default"
 >
 
+    <context:annotation-config/>
+
     <bean id="echo" class="rob.proto.grpc.service.DefaultEcho"/>
 
     <context:property-placeholder location="classpath:server.properties"/>
