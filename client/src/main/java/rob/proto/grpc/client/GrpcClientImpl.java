@@ -36,7 +36,7 @@ public class GrpcClientImpl implements GrpcClient
         ManagedChannelBuilder<?> channelBuilder = ManagedChannelBuilder.forAddress(
             serverHostname, serverPort
         );
-        channel = channelBuilder.build();
+        channel = channelBuilder.usePlaintext().build();
         log.info(String.format("Channel created for: %s:%d", serverHostname, serverPort));
         blockingStub = EchoServiceGrpc.newBlockingStub(channel);
     }
