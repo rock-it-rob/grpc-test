@@ -24,6 +24,9 @@ public class GrpcServerImpl implements GrpcServer
     private final int port;
     private final Server server;
 
+    @Autowired
+    private Echo echo;
+
     /**
      * Create a new instance
      *
@@ -65,11 +68,8 @@ public class GrpcServerImpl implements GrpcServer
      * class. Using it as a static class makes using spring beans a little
      * harder.
      */
-    private static class EchoService extends EchoServiceGrpc.EchoServiceImplBase
+    private class EchoService extends EchoServiceGrpc.EchoServiceImplBase
     {
-        @Autowired
-        private Echo echo;
-
         @Override
         public void echo(EchoApi.EchoRequest request, StreamObserver<EchoApi.EchoResponse> responseObserver)
         {
